@@ -1,0 +1,208 @@
+body{
+  background-color: rgb(33, 174, 218);
+  margin-top: 50px;
+  }
+
+  @keyframes wipe-enter {
+    0% {
+      transform: scale(0, .025);
+    }
+    50% {
+      transform: scale(1, .025);
+    }
+  }
+
+  @keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+  @media (prefers-reduced-motion: no-preference) {
+    #header-wrapper {
+      animation-name: fadein;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
+    #navbar {
+      animation-name: fadein;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
+    #travel1{
+      animation-name: fadein;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
+    #travel2{
+      animation-name: fadein;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
+    #travel3{
+      animation-name: fadein;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
+    #travel4{
+      animation-name: fadein;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
+    #aboutus{
+      animation-name: fadein;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
+    #kontakt{
+      animation-name: fadein;
+      animation-duration: 1.5s;
+      animation-iteration-count: 1;
+    }
+  }
+  
+  #navbar {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    overflow: hidden;
+    height: 50px;
+  }
+  
+  #header-wrapper{
+    position: relative;
+    top: 0;
+    left: 0;
+    transition: max-height 0.2s ease-out; 
+  }
+  
+  #bg{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+  }
+  
+  #travel1{
+    position: relative;
+  }
+  #travel2{
+    position: relative;
+  }
+  #travel3{
+    position: relative;
+  }
+  #travel4{
+    position: relative;
+  }
+  #aboutus{
+    position: relative;
+    height: 250px;
+    background-color:#171f33;
+    color: white;
+  }
+  #kontakt{
+    position: relative;
+    height: 300px;
+    background-color:#171f33;
+    color: white;
+  }
+  
+  #logo{
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  ul {
+    z-index: 100;
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #3f465d;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover:not(.active) {
+      background-color: #6a718a;
+    }
+    
+    .active {
+      background-color: #cfcfcf;
+    }
+    #center {
+      margin: 0;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+     -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+    #button {
+      margin: 0;
+      position: absolute;
+      top: 35vh;
+      left: 50%;
+      transform: translate(-50%, -100%);
+    }
+
+    #title {
+      margin: 0;
+      position: absolute;
+      top: 15vh;
+      left: 50%;
+     -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+  
+    .collapsible {
+      background-color: #171f33;
+      color: white;
+      cursor: pointer;
+      padding: 18px;
+      width: 200px;
+      border: none;
+      text-align: center;
+      outline: none;
+      font-size: 15px;
+      margin: 0;
+      position: absolute;
+    }
+    
+    .active, .collapsible:hover {
+      background-color: #6a718a;
+      color: white;
+    }
+    
+    .content {
+      padding: 0 18px;
+      max-height: 0;
+      overflow: hidden;
+      background-color: #3c445c;
+      color: white;
+      transition: max-height 0.2s ease-out;
+      border: solid black 1px;
+    }
+    
+    .kontakt{
+      text-align: center;
+      top: 50vh;
+    }
+    .sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
