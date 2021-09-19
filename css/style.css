@@ -154,7 +154,7 @@ body{
     #button {
       margin: 0;
       position: absolute;
-      top: 20vh;
+      top: 30vh;
       left: 50%;
       transform: translate(-50%, -100%);
     }
